@@ -216,6 +216,8 @@ function githubInputs() {
   const disableGithubEnvVars =
     core.getInput("disable-github-env-vars", { required: false }) === "true";
 
+  console.log("disableGithubEnvVars", disableGithubEnvVars);
+
   return {
     projectName,
     owner,
